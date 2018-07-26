@@ -9,17 +9,21 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var coffee = CoffeeMachine.init(waterPortions: 10, cofeePortions: 10, milkPortions: 10, donePortionsNumber: 10)
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        theInformationLabel.text = "choose your drink"
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
+    
+    
+    @IBOutlet weak var theInformationLabel: UILabel!
+    
+    
+    
+    
+    
 }
 

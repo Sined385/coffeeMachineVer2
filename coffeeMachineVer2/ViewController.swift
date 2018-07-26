@@ -17,9 +17,34 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         theInformationLabel.text = "choose your drink"
     }
+    @IBOutlet weak var theAmericanoLabel: UILabel!
     
+    @IBOutlet weak var theEspressoLabel: UILabel!
     
     @IBOutlet weak var theInformationLabel: UILabel!
+    
+    @IBOutlet weak var theCapuchinoLabel: UILabel!
+    @IBAction func theOkButton() {
+        theInformationLabel.text = ""
+        theEspressoLabel.text = "espresso"
+        theAmericanoLabel.text = "americano"
+    }
+    
+    @IBAction func theEspressoButton() {
+        theEspressoLabel.text = ""
+        theInformationLabel.text = "espresso works"
+    }
+    
+    @IBAction func theAmericanoButton() {
+        theEspressoLabel.text = ""
+        theAmericanoLabel.text = ""
+        theInformationLabel.text = "americano"
+    }
+    
+    @IBAction func theCapuchinoButton() {
+    }
+    
+    
     
     
     
